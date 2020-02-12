@@ -1,0 +1,322 @@
+/* Diff Font Styles */
+@font-face {
+    font-family: 'abhaya_libreregular';
+    src: url('fonts/abhayalibre_regular_macroman/AbhayaLibre-Regular-webfont.eot');
+    src: url('fonts/abhayalibre_regular_macroman/AbhayaLibre-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/abhayalibre_regular_macroman/AbhayaLibre-Regular-webfont.woff2') format('woff2'),
+         url('fonts/abhayalibre_regular_macroman/AbhayaLibre-Regular-webfont.woff') format('woff'),
+         url('fonts/abhayalibre_regular_macroman/AbhayaLibre-Regular-webfont.ttf') format('truetype'),
+         url('fonts/abhayalibre_regular_macroman/AbhayaLibre-Regular-webfont.svg#abhaya_libreregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aliceregular';
+    src: url('fonts/alice_regular_macroman/Alice-Regular-webfont.eot');
+    src: url('fonts/alice_regular_macroman/Alice-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/alice_regular_macroman/Alice-Regular-webfont.woff2') format('woff2'),
+         url('fonts/alice_regular_macroman/Alice-Regular-webfont.woff') format('woff'),
+         url('fonts/alice_regular_macroman/Alice-Regular-webfont.ttf') format('truetype'),
+         url('fonts/alice_regular_macroman/Alice-Regular-webfont.svg#aliceregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cormorantsemibold';
+    src: url('fonts/cormorant_semibold_macroman/Cormorant-SemiBold-webfont.eot');
+    src: url('fonts/cormorant_semibold_macroman/Cormorant-SemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cormorant_semibold_macroman/Cormorant-SemiBold-webfont.woff2') format('woff2'),
+         url('fonts/cormorant_semibold_macroman/Cormorant-SemiBold-webfont.woff') format('woff'),
+         url('fonts/cormorant_semibold_macroman/Cormorant-SemiBold-webfont.ttf') format('truetype'),
+         url('fonts/cormorant_semibold_macroman/Cormorant-SemiBold-webfont.svg#cormorantsemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'baskervcityregular';
+    src: url('fonts/baskercity_regular/baskervcity-regular-webfont.woff2') format('woff2'),
+         url('fonts/baskercity_regular/baskervcity-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Default Structure of the CV */
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	display: flex;
+	width: 100%;
+}
+
+/* Left Part of the CV */
+.left_part {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 30%;
+	background-color: #80DEEA;
+}
+
+/* Left Part Header */
+header {
+	height: 328px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+img {
+	height: 210px;
+	width: 210px;
+	border-radius: 50%;
+	border: 2.5px solid #00838F;
+}
+
+h3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #80DEEA;
+	background-color: #455A64;
+	font-size: 1.7em;
+	height: 48px;
+	font-family: 'aliceregular', 'Georgia', 'Arial', sans-serif;
+}
+
+/* Left Part First Section */
+.section_contact {
+	margin-left: 45px;
+	font-size: 1.2em;
+	font-family: 'abhaya_libreregular', 'Georgia', 'Arial', sans-serif;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.section_about_me {
+	margin-left: 45px;
+	margin-right: 45px;
+	text-align: justify-all;
+	font-family: 'baskervcityregular', 'Georgia', 'Arial', sans-serif;
+	font-size: 1.2em;
+}
+
+/* Left Part Footer */
+footer {
+  	position: absolute;
+   	bottom: 0;
+   	display: flex;
+   	flex-direction: column;
+   	width: 100%;
+   	height: 185px;
+}
+
+.icons {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+i.fas {
+	border: 2px solid #404040;
+	color: #404040;
+	border-radius: 50%;
+	font-size: 2em;
+	height: 38px;
+	width: 38px;
+	padding: 10px;
+}
+
+/* Right Part of the CV */
+.right_part {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	background-color: white;
+	padding-left: 50px;
+    padding-top: 40px;
+    padding-right: 30px;
+}
+
+/* Right Part Header */
+h1 {
+	font-size: 3em;
+	text-transform: uppercase;
+	font-family: 'abhaya_libreregular', 'Georgia', 'Arial', sans-serif;
+}
+
+.cyan {
+	color: #80DEEA;
+	font-family: 'abhaya_libreregular', 'Georgia', 'Arial', sans-serif;
+}
+
+h2 {
+	font-family: 'abhaya_libreregular', 'Georgia', 'Arial', sans-serif;
+	font-size: 1.75em;
+	position: relative;
+	bottom: 60px;
+}
+
+.underline {
+	border-bottom: 2px solid #80DEEA;
+	padding-bottom: 3px;
+}
+
+/* Right Part All Section */
+h4 {
+	font-family: 'cormorantsemibold', 'Georgia', 'Arial', sans-serif;
+	font-weight: bolder;
+	font-size : 1.7em;
+	border-bottom: 2px solid #80DEEA;
+	padding-bottom: 10px;
+}
+
+.title_adjust {
+	width: 70px;
+}
+
+.fas, .far {
+	color: #80DEEA;
+	
+}
+
+.inside {
+	display: flex;
+}
+
+.description {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+
+.date {
+	color: #404040;
+	margin-bottom: 0px;
+	font-family:'Impact', 'Georgia', 'Arial', sans-serif;
+}
+
+.adjust {
+	width: 40px;
+}
+
+.adjust_2 {
+	margin-left: 40px;
+}
+
+.city {
+	font-family:'Arial', 'Georgia', 'Arial', sans-serif;
+	color: #404040 ;
+	margin-bottom: 0px;
+	margin-left: 40px;
+	position: relative;
+	bottom: 15px;
+}
+
+.description_2 {
+	width: 60%;
+}
+
+.place {
+	font-family: 'Impact', 'Georgia', 'Arial', sans-serif;
+	color: #404040;
+	margin-bottom: 0px;
+
+}
+
+.designation {
+	font-family:'Arial', 'Georgia', 'Arial', sans-serif;
+	color: #404040 ;
+	margin-bottom: 0px;
+}
+
+.details {
+	font-family: 'Arial', 'Georgia', 'Arial', sans-serif;
+	color: #404040;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+	line-height: 20px;
+	text-align: justify;
+}
+
+.inside_r {
+	display: flex;
+	font-family: 'Arial', 'Georgia', 'Arial', sans-serif;
+}
+
+.description_r {
+	flex: 2;
+}
+
+.description_r_2 {
+	flex: 3;
+}
+
+/* Media Queries for Small Screen(<1024px) */
+@media all and (max-width: 1024px)
+{
+	#container {
+		flex-direction: column;
+	}
+
+	.left_part {
+		width: 100%;
+	}
+
+	footer {
+		position: static;
+	}
+
+	.right_part {
+		width: 100%;
+		padding: 0;
+	}
+
+	.description_2 {
+		flex: 4;		
+	}
+
+	.description_r {
+		flex: 2;
+	}
+
+	.description_r_2 {
+		flex: 2;
+	}
+
+	.description {
+		flex: 4;
+	}
+
+	.details {
+		text-align: justify-all;
+	}
+
+	.adjust {
+		width: 20px;
+	}
+
+	.adjust_2 {
+		margin-left: 20px; 
+	}
+
+	.city {
+		margin-left: 20px;
+	}
+
+	h1, h2 {
+		text-align: center;
+	}
+
+	.underline {
+		border: none;
+	}
+}
